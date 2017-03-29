@@ -1,13 +1,13 @@
 # SQLcl
 
-[SQLcl](http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html) caught my attention because it's now supported in [Oracle's Developer Cloud Service](https://cloud.oracle.com/developer_service). Investigating further, it appears to address all the shortcomings of SQL\*Plus as SQLcl provides in-line editing, statement completion, and command recall for a feature-rich experience, all while also supporting your previously written SQL*Plus scripts. 
+[SQLcl](http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html) caught my attention because it's now supported in [Oracle's Developer Cloud Service](https://cloud.oracle.com/developer_service)(See [Adding a Build Step that Invokes SQLcl](http://docs.oracle.com/en/cloud/paas/developer-cloud/csdcs/managing-project-jobs-and-builds-oracle-developer-cloud-service.html#GUID-9D31DDA7-2EB8-496E-9228-2588F636CE84)). Investigating further, it appears to address all the shortcomings of SQL\*Plus as SQLcl provides in-line editing, statement completion, and command recall for a feature-rich experience, all while also supporting your previously written SQL*Plus scripts. 
 
 ## Getting Started
 SQLcl is only included with 12.2 Database Cloud Service instances. Here's how I got it up and running on a 12.1 instance.
-- Download SQLcl to your workstation
+- [Download](http://www.oracle.com/technetwork/developer-tools/sqlcl/downloads/index.html) SQLcl to your workstation
 - SCP the zip to the oracle home directory of your Database Cloud instance
 - Extract the archive
-- SQLcl requires Java 8, so edit the /home/oracle/.bashrc and add the following 2 lines to the bottom to set the JAVA_HOME and update the PATH:
+- SQLcl requires Java 8, so edit the /home/oracle/.bashrc and add the following 2 lines to the bottom to set the JAVA_HOME, SQLCL_HOME and update the PATH:
 ```
 export JAVA_HOME=/u01/app/oracle/product/java/jdk1.8.0_74
 export SQLCL_HOME=/home/oracle/sqlcl
