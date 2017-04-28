@@ -30,5 +30,46 @@ Copyright (c) 1982, 2017, Oracle.  All rights reserved.
 Username? (''?)
 
 ```
+Some useful commands:
 
 
+```
+SQL> [oracle@DevOpsDB ~]$ sql / as sysdba
+
+Error starting at line : 1 in command -
+[oracle@DevOpsDB ~]$ sql / as sysdba
+Error report -
+Unknown Command
+
+SQL>
+```
+
+```
+[oracle@DevOpsDB ~]$ sql DEVOPS/DEVOPS@PDB1
+
+SQLcl: Release 4.2.0 Production on Fri Apr 28 13:51:39 2017
+
+Copyright (c) 1982, 2017, Oracle.  All rights reserved.
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning and Real Application Testing options
+
+
+SQL> 
+```
+
+```
+[oracle@DevOpsDB ~]$ sql sys/{password}@pdb1 as sysdba;
+
+SQLcl: Release 4.2.0 Production on Fri Apr 28 13:58:14 2017
+
+Copyright (c) 1982, 2017, Oracle.  All rights reserved.
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning and Real Application Testing options
+
+
+SQL>
+```
