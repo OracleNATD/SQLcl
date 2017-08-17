@@ -9,10 +9,11 @@ SQLcl is only included with 12.2 Database Cloud Service instances. Here's how I 
 - Extract the archive
 - SQLcl requires Java 8, so edit the /home/oracle/.bashrc and add the following 2 lines to the bottom to set the JAVA_HOME, SQLCL_HOME and update the PATH:
 
+```
 	export JAVA_HOME=/u01/app/oracle/product/java/jdk1.8.0_74
 	export SQLCL_HOME=/home/oracle/sqlcl
 	export PATH=$JAVA_HOME/bin:$SQLCL_HOME/bin:$PATH
-
+```
 
 Then source your new .bashrc, verify your Java version and test running SQLcl:
 
