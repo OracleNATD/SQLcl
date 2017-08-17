@@ -8,26 +8,26 @@ SQLcl is only included with 12.2 Database Cloud Service instances. Here's how I 
 - SCP the zip to the oracle home directory of your Database Cloud instance
 - Extract the archive
 - SQLcl requires Java 8, so edit the /home/oracle/.bashrc and add the following 2 lines to the bottom to set the JAVA_HOME, SQLCL_HOME and update the PATH:
-```
-export JAVA_HOME=/u01/app/oracle/product/java/jdk1.8.0_74
-export SQLCL_HOME=/home/oracle/sqlcl
-export PATH=$JAVA_HOME/bin:$SQLCL_HOME/bin:$PATH
 
-```
+	export JAVA_HOME=/u01/app/oracle/product/java/jdk1.8.0_74
+	export SQLCL_HOME=/home/oracle/sqlcl
+	export PATH=$JAVA_HOME/bin:$SQLCL_HOME/bin:$PATH
+
+
 Then source your new .bashrc, verify your Java version and test running SQLcl:
-```
-[oracle@DevOpsDB ~]$ . .bashrc
-[oracle@DevOpsDB ~]$ java -version
-java version "1.8.0_74"
-Java(TM) SE Runtime Environment (build 1.8.0_74-b02)
-Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
-[oracle@DevOpsDB ~]$ sql
 
-SQLcl: Release 4.2.0 Production on Wed Mar 29 19:02:01 2017
-
-Copyright (c) 1982, 2017, Oracle.  All rights reserved.
-
-Username? (''?)
+	[oracle@DevOpsDB ~]$ . .bashrc
+	[oracle@DevOpsDB ~]$ java -version
+	java version "1.8.0_74"
+	Java(TM) SE Runtime Environment (build 1.8.0_74-b02)
+	Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
+	[oracle@DevOpsDB ~]$ sql
+	
+	SQLcl: Release 4.2.0 Production on Wed Mar 29 19:02:01 2017
+	
+	Copyright (c) 1982, 2017, Oracle.  All rights reserved.
+	
+	Username? (''?)
 
 Some useful commands:
 
