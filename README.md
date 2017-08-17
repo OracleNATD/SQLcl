@@ -32,17 +32,14 @@ Username? (''?)
 ```
 Some useful commands:
 
+	SQLcl: Release 17.2.0 Production on Thu Aug 17 12:17:46 2017
 
-```
-SQL> [oracle@DevOpsDB ~]$ sql / as sysdba
+	Copyright (c) 1982, 2017, Oracle.  All rights reserved.
 
-Error starting at line : 1 in command -
-[oracle@DevOpsDB ~]$ sql / as sysdba
-Error report -
-Unknown Command
+	Connected to an Idle instance, startup command available.
 
-SQL>
-```
+	SQL>
+
 
 ```
 [oracle@DevOpsDB ~]$ sql DEVOPS/DEVOPS@PDB1
